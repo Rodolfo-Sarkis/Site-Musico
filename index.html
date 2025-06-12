@@ -2,73 +2,85 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva Jesús</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viva Jesus</title>
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">Viva Jesús</h1>
-            <img class="jesus" src="images/jesus.webp" alt="Imagem de Jesús">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Cantos</a></li>
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">Conóceme</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Tienda</a></li>
-                </ul>
-            </nav>
-            <form class="search-form">
-                <input type="text" placeholder="Buscar…">
-            </form>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Viva Jesus</h1>
 
-    <section class="hero container">
-        <h2>Cantos para Louvar à Deus</h2>
-        <p>Abaixo, você encontrará cantos litúrgicos divididos por idioma — em português e espanhol — para ajudar você a
-            louvar com mais profundidade e conexão, seja em sua paróquia ou em momentos pessoais de oração.</p>
-        <div class="hero-images">
-            <img src="images/brasil.webp" alt="Cantos em português">
-            <img src="images/espanha.png" alt="Cantos em espanhol">
-            <!-- <img src="placeholder.jpg" alt="Ofertorio">
-      <img src="placeholder.jpg" alt="Virgen">
-      <img src="placeholder.jpg" alt="Salida">
-    </div> -->
-    </section>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
-    <footer class="site-footer container">
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Todos os Cantos</a></li>
-                <li><a href="#">Conóceme</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="social-links">
-            <a href="#">Instagram</a> ·
-            <a href="#">Facebook</a> ·
-            <a href="#">Spotify</a> ·
-            <a href="#">TikTok</a> ·
-            <a href="#">YouTube</a> ·
-            <a href="mailto:">Mail</a>
-        </div>
-        <p>Copyright © 2025 Viva Jesús</p>
-    </footer>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Cantos</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Conóceme</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Tienda</a></li>
+        </ul>
+      </nav>
+
+      <img class="jesus" src="images/jesus.webp" alt="Imagem de Jesús" />
+
+      <form class="search-form">
+        <input type="text" placeholder="Buscar…" />
+      </form>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <h2>Cantos para Louvar à Deus</h2>
+    <p>
+      Abaixo, você encontrará cantos litúrgicos divididos por idioma — em português e espanhol — para ajudar você a louvar
+      com mais profundidade e conexão, seja em sua paróquia ou em momentos pessoais de oração.
+    </p>
+    <div class="hero-images">
+      <img src="images/brasil.webp" alt="Cantos em português" />
+      <img src="images/espanha.png" alt="Cantos em espanhol" />
+    </div>
+  </section>
+
+  <footer class="site-footer container">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Todos os Cantos</a></li>
+        <li><a href="#">Conóceme</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="social-links">
+      <a href="#">Instagram</a> ·
+      <a href="#">Facebook</a> ·
+      <a href="#">Spotify</a> ·
+      <a href="#">TikTok</a> ·
+      <a href="#">YouTube</a> ·
+      <a href="mailto:">Mail</a>
+    </div>
+    <p>Copyright © 2025 Viva Jesus</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    const header = document.querySelector(".site-header");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      header.classList.toggle("menu-open");
+    });
+  </script>
 </body>
 
 </html>

@@ -14,7 +14,11 @@ body {
   font-size: 1.5rem;
 }
 
-
+h1 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Links */
 a {
@@ -39,6 +43,7 @@ a:hover {
   background-color: #f5f1f9;
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
+  position: relative; /* necessário para o menu absoluto */
 }
 
 .site-header .container {
@@ -46,6 +51,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  transition: padding-top 0.3s ease;
 }
 
 .logo {
@@ -55,13 +61,16 @@ a:hover {
 }
 
 .jesus {
-    border-radius: 50px;
+  border-radius: 50px;
+  max-width: 250px;
+  height: auto;
 }
 
 h1::first-letter {
   font-size: 200%;
 }
 
+/* Navegação principal */
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -174,12 +183,67 @@ h1::first-letter {
   text-decoration: underline;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-  .main-nav ul,
-  .footer-nav ul {
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5a4b81;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100px; /* ajuste conforme o tamanho do h1 + espaçamento */
+    left: 0;
+    width: 100%;
+    background-color: #f5f1f9;
+    border-top: 1px solid #ddd;
+    z-index: 10;
+    padding: 15px 0;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .main-nav ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .main-nav a {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .search-form {
+  margin: 20px auto 0; /* 20px topo, automático nas laterais para centralizar, 0 embaixo */
+  max-width: 300px;    /* limita a largura máxima */
+  width: 100%;         /* responsivo até o máximo */
+}
+
+  /* Quando o menu abre, empurra o conteúdo para baixo */
+  .site-header.menu-open .container {
+    padding-top: 490px; /* ajuste para altura do menu */
   }
 
   .hero-images img {
@@ -187,4 +251,3 @@ h1::first-letter {
     height: 70px;
   }
 }
-
