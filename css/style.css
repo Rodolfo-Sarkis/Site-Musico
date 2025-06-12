@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+
+
+/* Links */
+a {
+  color: #5a4b81;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #7a65a6;
+}
+
+/* Container geral */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.site-header {
+  background-color: #f5f1f9;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #5a4b81;
+}
+
+.jesus {
+    border-radius: 50px;
+}
+
+h1::first-letter {
+  font-size: 200%;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.main-nav a {
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  background-color: #e5dff0;
+}
+
+/* Formulário de busca */
+.search-form input {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border 0.3s;
+}
+
+.search-form input:focus {
+  border-color: #7a65a6;
+}
+
+/* Seção principal */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #faf8fc;
+  border-top: 1px solid #e3dcec;
+  border-bottom: 1px solid #e3dcec;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  color: #5a4b81;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #666;
+}
+
+.hero-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-images img {
+  width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.hero-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: #f5f1f9;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 50px;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: #5a4b81;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.social-links a {
+  margin: 0 6px;
+  color: #7a65a6;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .main-nav ul,
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-images img {
+    width: 100px;
+    height: 70px;
+  }
+}
+
