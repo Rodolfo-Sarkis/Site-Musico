@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
   font-optical-sizing: auto;
   color: #333;
   background-color: #fff;
@@ -124,7 +124,7 @@ h1::first-letter {
 .hero p {
   max-width: 700px;
   margin: 0 auto 30px;
-  color: #666;
+  color: #5a4b81;
 }
 
 .hero-images {
@@ -152,8 +152,8 @@ h1::first-letter {
   background-color: #f5f1f9;
   padding: 30px 0;
   text-align: center;
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #5a4b81;
   margin-top: 50px;
 }
 
@@ -170,17 +170,9 @@ h1::first-letter {
   color: #5a4b81;
 }
 
-.footer-nav a:hover {
-  text-decoration: underline;
-}
-
 .social-links a {
   margin: 0 6px;
   color: #7a65a6;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
 }
 
 /* Botão hambúrguer */
@@ -250,4 +242,23 @@ h1::first-letter {
     width: 100px;
     height: 70px;
   }
+}
+
+i {
+  font-size: 20px;
+}
+
+a i {
+  transition: 0.3s;
+}
+
+a:hover i {
+  color: #4a3b6d;
+  transform: scale(1.2);
+}
+
+.separator {
+  font-size: 24px; /* tamanho maior para o ponto */
+  color: #555; /* cor opcional */
+  margin: 0 8px; /* espaçamento horizontal */
 }
