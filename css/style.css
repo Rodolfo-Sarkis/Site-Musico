@@ -140,6 +140,30 @@ h1::first-letter {
   color: #5a4b81;
 }
 
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-hero {
+  background-color: #fff;
+  color: #5a4b81;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: 2px solid #5a4b81;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #5a4b81;
+  color: #fff;
+}
+
+
 .hero-images {
   display: flex;
   flex-wrap: wrap;
