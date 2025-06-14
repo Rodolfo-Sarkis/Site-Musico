@@ -54,6 +54,19 @@ a:hover {
   transition: padding-top 0.3s ease;
 }
 
+.site-header .container {
+  position: relative; /* Permite posicionar filhos com absolute */
+}
+
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px; /* ou o tamanho que quiser */
+  height: auto;
+  z-index: 10;
+}
+
 .logo {
   font-size: 4rem;
   font-weight: bold;
@@ -187,6 +200,7 @@ h1::first-letter {
   top: 20px;
   right: 20px;
   z-index: 11;
+  margin-top: 30px
 }
 
 /* RESPONSIVO */
@@ -198,7 +212,7 @@ h1::first-letter {
   .main-nav {
     display: none;
     position: absolute;
-    top: 100px; /* ajuste conforme o tamanho do h1 + espaçamento */
+    top: 50px; /* ajuste conforme o tamanho do h1 + espaçamento */
     left: 0;
     width: 100%;
     background-color: #f5f1f9;
