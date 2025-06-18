@@ -383,3 +383,22 @@ a:hover i {
   height: 100%;
   border: 0;
 }
+
+.nestor-jesus {
+  width: 100%;
+  max-width: 600px; /* Limita o tamanho máximo */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centraliza, opcional */
+  border-radius: 50px;
+}
+
+.quem-sou {
+  width: 100%;         /* largura relativa à tela */
+  max-width: none;     /* remove limite máximo */
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
