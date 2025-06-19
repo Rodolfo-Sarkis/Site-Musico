@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Viva Jesus</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,55 +57,31 @@
         </div>
     </header>
 
-    <section class="hero container">
-        <h2>Cantos para Louvar à Deus</h2>
-        <p>
-            Abaixo, você encontrará composições inéditas do autor e compositor Nestor Aramayo E . Interpretadas por renomeadas artistas. Estes  louvores novos  estão disponíveis em música e vídeo para ajudar você a louvar com mais profundidade e conexão — seja nos cultos em  sua igreja,  ou em momentos pessoais de oração. Clique nos botões para ouvir no Spotify ou assistir no YouTube.
+    <section class="formulario-contato">
+        <h2>Entre em Contato</h2>
+        <p>Envie sua mensagem, pedido de música ou sugestão. Será um prazer ouvir você! Ou entre em contato pelo
+            whatsapp: &nbsp;<a href="https://wa.me/5511995059237" target="_blank">
+                <span class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <strong>5511995059237</strong>
+                </span>
+            </a>
         </p>
-        <div class="hero-buttons">
-            <a class="btn-hero" href="https://open.spotify.com/artist/7Ig7XsoWP5lqJue1Vc9gMU?si=wkDgD4xKROO97keu2jkK6A" target="_blank" rel="noopener noreferrer">Música</a>
-            <a class="btn-hero" href="https://www.youtube.com/@rubia2512" target="_blank" rel="noopener noreferrer">Vídeos</a>
 
-        </div>
+        <form action="mailto:nanoaramayo1@gmail.com" method="POST" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button class="centralizar-formulario" type="submit">Enviar</button>
+        </form>
     </section>
 
-    <section class="link-gallery">
-    <div class="item">
-      <a href="https://example.com/1" target="_blank">
-        <img src="images/louvor de abertura.avif" alt="Louvores de Abertura" />
-        <h3>Louvores de Abertura</h3>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://example.com/2" target="_blank">
-        <img src="images/congregacional.jpg" alt="Louvor congregacional" />
-        <h3>Louvor congregacional</h3>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://example.com/3" target="_blank">
-        <img src="images/encerramento.jpg" alt="louvores de encerramento" />
-        <h3>louvores de encerramento</h3>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://example.com/3" target="_blank">
-        <img src="images/lançamento.jpg" alt="Lançamentos" />
-        <h3>Lançamentos</h3>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://example.com/3" target="_blank">
-        <img src="images/fé e cura.jpg" alt="Canções que transmitem fé e cura" />
-        <h3>Canções que transmitem fé e cura</h3>
-      </a>
-    </div>
-  </section>
 
     <footer class="site-footer container">
         <!-- <nav class="footer-nav">
@@ -149,5 +125,3 @@
         });
     </script> -->
 </body>
-
-</html>
